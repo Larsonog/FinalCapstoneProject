@@ -1,34 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Calendar.css'
+import useState from 'react'
 
 
 function renderEvent(event) {
     return (
-        <div className='event'>
+        <div key={event.id} className='event'>
             <h2 className='h2'> {event.title} </h2>
             <p> {event.description}</p>
-            <p>{event.startTime.toDateString()}</p>
+            {/*<p>{event.startTime.toDateString()}</p>*/}
             <p>{event.duration} </p>
         </div>
     )
 }
 
 function NewCalendar() {
-    const events = [{
-        id: "1",
-        title: "Test",
-        description: "Trying a new tutorial",
-        startTime: new Date(),
-        duration: 1.0
-    },
-    {
-        id: "2",
-        title: "Test Test",
-        description: "Trying a new tutorial",
-        startTime: new Date(),
-        duration: 2.0
-    },
-    ]
+    const [events, setEvents] = useState(null)
+    useEffect(() => {
+        async function loadEvents() {
+            const firestoreEvents = await getEvents()
+            setEvents(firestoreEvents)
+        }
+        loadEvents()
+    }, [])
+
+    if (!events) {
+        return  <div>Loading...</div>
+    }
+    
     return (
         <div className='calendarContainer'>
             <h1> Upcoming Events! </h1>
