@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
 import './Calendar.css'
-import useState from 'react'
+import { useEffect, useState } from 'react'
+import { getEvents } from '../../services/firestoreService'
 
 
 function renderEvent(event) {
