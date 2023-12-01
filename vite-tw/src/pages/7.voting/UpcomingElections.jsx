@@ -1,21 +1,39 @@
-import React from "react"; 
-import TableDemo from "./TableDemo"; 
+import './VotingPage.css'
+import { useEffect, useState } from 'react'
+import { getVotingDoc } from '../../services/firestoreVotingService'
 
-function UpComingElections() { 
-	return ( 
-		<div> 
-			{/* Header with inline css */} 
-			<h1 
-				style={{ 
-					display: 'flex', justifyContent: 'center', padding: '15px', 
-					border: '13px solid #b4f0b4', color: 'rgb(11, 167, 11)'
-				}}> 
-				Geeks For Geeks Material UI Table 
-			</h1> 
-			{/* Table component below header */} 
-			<TableDemo /> 
-		</div> 
-	) 
-} 
 
-export default UpComingElections;
+function renderDoc(voting) {
+    return (
+        <div key={voting.id} >
+            <h2 className='h2'> {voting.title} </h2>
+            <p> {voting.description}</p>
+            {/*<p>{event.startTime.toDateString()}</p>*/}
+            <p>{voting.date.toString()} </p>
+        </div>
+    )
+}
+
+function VotingDocs() {
+    const [voting, setVotingDoc] = useState(null)
+    useEffect(() => {
+        async function loadVotingDoc() {
+            const firestoreEvents = await getVotingDoc()
+            setVotingDoc(firestoreEvents)
+        }
+        loadVotingDoc()
+    }, [])
+
+    if (!voting) {
+        return <div>Loading...</div>
+    }
+
+    return (
+        <div>
+            <h1> Upcoming Voting Events! </h1>
+            {voting.map(renderDoc)}
+        </div>
+    );
+}
+
+export default VotingDocs
