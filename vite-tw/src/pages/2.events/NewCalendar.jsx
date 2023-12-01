@@ -25,9 +25,9 @@ function NewCalendar() {
     }, [])
 
     if (!events) {
-        return  <div>Loading...</div>
+        return <div>Loading...</div>
     }
-    
+
     return (
         <div className='calendarContainer'>
             <h1> Upcoming Events! </h1>
