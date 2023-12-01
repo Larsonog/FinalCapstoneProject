@@ -1,12 +1,18 @@
-import React, { useEffect, useState }from'react';
-import ConwayMap from './default/ConwayMap';
+import React, { useEffect, useState } from 'react';
 import MyComponent from './googleMaps/googleMapsReact';
-//import  TrafficConstruct from './googleMaps/initMaps';
 
 
-function RoadWork () {
-  return(
-    <MyComponent/>
+
+function RoadWork() {
+  return (
+    <div>
+      <h1>Road Work</h1>
+      <span><MyComponent/></span>
+      <span>
+        <h2>Construction</h2>
+        <p>list of construction incidents. I should add into firebase </p>
+      </span>
+    </div>
   )
 
 }

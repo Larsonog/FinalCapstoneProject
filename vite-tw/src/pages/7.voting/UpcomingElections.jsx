@@ -6,7 +6,7 @@ import { getVotingDoc } from '../../services/firestoreVotingService'
 function renderDoc(voting) {
     return (
         <div key={voting.id} >
-            <h2 className='h2'> {voting.title} </h2>
+            <div className='title'> {voting.title} </div>
             <p> {voting.description}</p>
             {/*<p>{event.startTime.toDateString()}</p>*/}
             <p>{voting.date.toString()} </p>
