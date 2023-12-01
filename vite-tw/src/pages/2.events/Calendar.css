@@ -1,0 +1,19 @@
+.calendarContainer{
+	height: 100vh;
+
+}
+
+.event{
+	margin: 2rem;
+	padding: 2rem;
+}
+
+h1{
+	font-size: 3em;
+	text-align: center;
+	font-weight:bold
+}
+
+.h2{
+	font-weight: 200;
+}
