@@ -5,12 +5,15 @@ import { getVotingDoc } from '../../services/firestoreVotingService'
 
 function renderDoc(voting) {
     return (
-        <div key={voting.id} >
+		<div className="block-example border border-dark">
+        <div key={voting.id} className='votingPadding' >
             <div className='title'> {voting.title} </div>
             <p> {voting.description}</p>
             {/*<p>{event.startTime.toDateString()}</p>*/}
-            <p>{voting.date.toString()} </p>
+            <p>{voting.date} </p>
+			<p>{voting.addInfo}</p>
         </div>
+		</div>
     )
 }
 

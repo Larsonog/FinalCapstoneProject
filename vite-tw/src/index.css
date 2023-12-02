@@ -28,3 +28,9 @@ center{
     font-size:15px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.votingPadding{
+    padding-left:100px;
+    padding-bottom: 10px;
+    border-style: dotted;
+}

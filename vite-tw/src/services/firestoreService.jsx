@@ -10,7 +10,7 @@ export async function getEvents() {
         title: doc.data()["title"],
         description: doc.data()["description"],
         duration: doc.data()["duration"],
-        startDate: doc.data()["startDate"]
+        startDate: doc.data()["startDate"],
     }));
 
 }

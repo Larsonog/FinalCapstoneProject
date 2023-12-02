@@ -10,6 +10,7 @@ export async function getVotingDoc() {
         title: doc.data()["title"],
         description: doc.data()["description"],
         date: doc.data()["date"],
+        addInfo: doc.data()["addInfo"]
     }));
 
 }
