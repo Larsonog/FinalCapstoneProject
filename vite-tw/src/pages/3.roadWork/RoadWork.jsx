@@ -1,22 +1,19 @@
-import React, { useEffect, useState } from 'react';
 import MyComponent from './googleMaps/googleMapsReact';
-
-
+import Construction from './Construction';
 
 function RoadWork() {
   return (
     <div>
       <h1>Road Work</h1>
-      <span><MyComponent/></span>
-      <span>
+      <div className='row'>
+        <MyComponent />
         <h2>Construction</h2>
-        <p>list of construction incidents. I should add into firebase </p>
-      </span>
+        <Construction/>
+      </div>
     </div>
   )
 
 }
-
 
 export default RoadWork;
 

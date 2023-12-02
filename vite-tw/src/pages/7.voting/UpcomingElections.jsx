@@ -18,8 +18,8 @@ function VotingDocs() {
     const [voting, setVotingDoc] = useState(null)
     useEffect(() => {
         async function loadVotingDoc() {
-            const firestoreEvents = await getVotingDoc()
-            setVotingDoc(firestoreEvents)
+            const firestoreVoting = await getVotingDoc()
+            setVotingDoc(firestoreVoting)
         }
         loadVotingDoc()
     }, [])

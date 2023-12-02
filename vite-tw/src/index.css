@@ -19,3 +19,12 @@ p{
 center{
     padding:10px;
 }
+.row{
+    display:flex; 
+    flex-direction:row;
+}
+
+.title{
+    font-size:15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

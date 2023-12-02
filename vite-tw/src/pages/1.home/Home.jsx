@@ -4,8 +4,6 @@
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
-
         <img src="assets/phbanner.jpeg" className='banner' alt="picture of downtown Conway, AR" /> 
         <p>
           Welcome to Encylopedia Conway a webpage for anything and everything going on in Conway, Arkansas.
