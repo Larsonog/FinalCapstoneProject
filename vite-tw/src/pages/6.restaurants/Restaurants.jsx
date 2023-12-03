@@ -9,7 +9,23 @@ const Restaurants = () => {
       <h1>
         Restaurants
       </h1>
+      <div className="row">
       <ConwayMap/>
+      <div className= "container">
+        <h2>List of local restaurants</h2>
+        <ul>
+          <li>
+            Cross Creek Sandwhiches
+          </li>
+          <li>
+          Stobys 
+          </li>
+          <li>
+            BMB bakery 
+          </li>
+        </ul>
+      </div>
+      </div>
     </div>
   )
 }

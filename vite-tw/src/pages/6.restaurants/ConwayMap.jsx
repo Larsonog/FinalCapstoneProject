@@ -6,14 +6,14 @@ function ConwayMap() {
 
   // Define an array of second-hand shop locations with coordinates and labels
   const secondHandShops = [
-    { name: 'Shop 1', coordinates: [35.0901, -92.4489] },
-    { name: 'Shop 2', coordinates: [35.0885, -92.4442] },
-    { name: 'Shop 3', coordinates: [35.0863, -92.4381] },
+    { name: 'Mikes Place', coordinates: [35.08989334054979, -92.44034683223524] },
+    { name: 'BMB Creations Bakery', coordinates: [35.090286049774704, -92.43920770524913] },
+    { name: 'Cross Creek Sandwhich Shop', coordinates: [35.09138311987305, -92.4389370322352] },
     // Add more shops as needed
   ];
 
   return (
-    <MapContainer center={conwayPosition} zoom={13} style={{ height: '500px', width: '100%' }}>
+    <MapContainer center={conwayPosition} zoom={15} style={{ height: '500px', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
