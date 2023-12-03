@@ -1,10 +1,9 @@
-
-
+import CarouselonHome from "./Carousel"
 
 const Home = () => {
   return (
     <div>
-        <img src="assets/phbanner.jpeg" className='banner' alt="picture of downtown Conway, AR" /> 
+        <CarouselonHome/>
         <p>
           Welcome to Encylopedia Conway a webpage for anything and everything going on in Conway, Arkansas.
           This project is for my Senior Seminar class at Hendrix College. I am currently a senior there
