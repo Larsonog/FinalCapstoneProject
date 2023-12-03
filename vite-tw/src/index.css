@@ -15,17 +15,8 @@ p{
     font-size:large;
     padding:5px;
 }
-.homepage-container1{
-    padding-left:50px;
-    padding-right:600px;
-    padding-top: 15px;
-
-}
-.homepage-container2{
-    padding-left:600px;
-    padding-right:50px;
-    padding-top: 15px;
-
+.empty-space{
+    padding:20px;
 }
 center{
     padding:10px;
@@ -53,6 +44,24 @@ center{
 
 }
 /*Specific page styles*/
+
+
+.homepage-container1{
+    padding-left:50px;
+    padding-right:600px;
+    padding-top: 15px;
+}
+.homepage-container2{
+    padding-left:600px;
+    padding-right:50px;
+    padding-top: 15px;
+
+}
+.homepage-container3{
+    padding-left:150px;
+}
+
+
 .votingPadding{
     padding-left:100px;
     padding-bottom: 10px;
