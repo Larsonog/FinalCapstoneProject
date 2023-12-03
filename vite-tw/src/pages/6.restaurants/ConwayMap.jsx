@@ -9,7 +9,7 @@ function ConwayMap() {
     { name: 'Mikes Place', coordinates: [35.08989334054979, -92.44034683223524] },
     { name: 'BMB Creations Bakery', coordinates: [35.090286049774704, -92.43920770524913] },
     { name: 'Cross Creek Sandwhich Shop', coordinates: [35.09138311987305, -92.4389370322352] },
-    // Add more shops as needed
+    
   ];
 
   return (
