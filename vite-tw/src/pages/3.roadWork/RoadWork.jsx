@@ -3,7 +3,7 @@ import Construction from './Construction';
 
 function RoadWork() {
   return (
-    <div>
+    <div className='page-background'>
       <h1>Road Work</h1>
       <div className='row'>
         <MyComponent />

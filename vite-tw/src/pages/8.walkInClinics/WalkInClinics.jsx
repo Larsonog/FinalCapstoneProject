@@ -7,7 +7,7 @@ import { walkInClinicsLoc } from "./WList"
 
 const WalkInClinics = () => {
   return (
-    <div>
+    <div className="page-background">
       <h1>Walk-in Clinics
       </h1>
       <ConwayMap walkInClinicsLoc={walkInClinicsLoc}/>

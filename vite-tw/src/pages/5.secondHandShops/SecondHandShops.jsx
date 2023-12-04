@@ -6,7 +6,7 @@ import { secondHandShops } from "./SList"
 
 const SecondHandShops = () => {
   return (
-    <div>
+    <div className="page-background">
       <h1>SecondHandShops
       
       </h1>

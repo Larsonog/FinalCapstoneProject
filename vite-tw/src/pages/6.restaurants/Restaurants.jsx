@@ -13,7 +13,7 @@ const Restaurants = () => {
 
 
   return (
-    <div>
+    <div className="page-background">
       <h1>
         Restaurants
       </h1>

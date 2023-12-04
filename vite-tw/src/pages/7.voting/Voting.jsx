@@ -3,9 +3,8 @@ import VotingDocs from "./UpcomingElections"
 
 const Voting = () => {
   return (
-    <div>
+    <div className="voting-page-background">
       <VotingDocs/>
-     
     </div>
   )
 }

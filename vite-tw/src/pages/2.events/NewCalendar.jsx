@@ -29,9 +29,13 @@ function NewCalendar() {
     }
 
     return (
-        <div className='calendarContainer'>
-            <h1> Upcoming Events! </h1>
-            {events.map(renderEvent)}
+        <div className='page-background'>
+            <div className='calendarContainer'>
+                
+                <h1> Upcoming Events! </h1>
+                {events.map(renderEvent)}
+            
+            </div>
         </div>
     );
 }

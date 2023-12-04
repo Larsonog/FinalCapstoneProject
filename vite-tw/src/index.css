@@ -40,6 +40,13 @@ p{
 .border{
     border: 2px dotted;
 }
+.button-border{
+    border:3px;
+    background-color:#B8DBD9;
+    padding:4px;
+    border-radius: 7px;
+    outline: #679436 solid 2px;
+}
 /* Pallet colors*/
 .nav-background{
     background-color: #003459;
@@ -50,12 +57,18 @@ p{
     width: 100vw;
 
 }
+.page-background{
+    background-color: #fbf7f5;
+}
+.voting-page-background{
+    background: linear-gradient(0deg, white,#fbf7f5 );
+}
+
+/*Specific page styles*/
+
 .home-padding{
     padding:50px;
 }
-/*Specific page styles*/
-
-
 .homepage-container1{
     padding-left:50px;
     padding-right:600px;
@@ -76,4 +89,10 @@ p{
     padding-left:100px;
     padding-bottom: 10px;
     border-style: dotted;
+}
+.post-border{
+    border: 2px solid black;
+    padding:5px;
+    background: #DEDEF8 ;
+    border-radius: 7px;
 }
