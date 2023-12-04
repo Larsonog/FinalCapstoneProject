@@ -7,7 +7,7 @@ crossorigin=""/>
 const WalkInClinics = () => {
   return (
     <div>
-      <h1>WalkInClinics
+      <h1>Walk-in Clinics
       </h1>
       <ConwayMap/>
     </div>

@@ -33,15 +33,21 @@ center{
 .container{
     padding: 5px;
 }
+.border{
+    border: 2px dotted;
+}
 /* Pallet colors*/
 .nav-background{
     background-color: #003459;
 }
 .secondary-color{ 
     background: linear-gradient(0deg, #F4F4F9,#B8DBD9 );
-    height: 100vh;
+    height: 125vh;
     width: 100vw;
 
+}
+.home-padding{
+    padding:50px;
 }
 /*Specific page styles*/
 
@@ -52,7 +58,7 @@ center{
     padding-top: 15px;
 }
 .homepage-container2{
-    padding-left:600px;
+    padding-left:250px;
     padding-right:50px;
     padding-top: 15px;
 
