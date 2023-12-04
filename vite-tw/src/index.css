@@ -18,6 +18,9 @@ p{
 .empty-space{
     padding:20px;
 }
+.small-empty-space{
+    padding-bottom: 5px;
+}
 .center{
     padding-left:400px;
     padding-right:400px;
