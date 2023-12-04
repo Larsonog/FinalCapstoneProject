@@ -8,7 +8,7 @@ function RoadWork() {
       <div className='row'>
         <MyComponent />
         <h2>Construction</h2>
-        <Construction/>
+        {/*<Construction/> */}
       </div>
     </div>
   )

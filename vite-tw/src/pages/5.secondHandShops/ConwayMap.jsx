@@ -6,9 +6,13 @@ function ConwayMap() {
 
   // Define an array of second-hand shop locations with coordinates and labels
   const secondHandShops = [
-    { name: 'Shop 1', coordinates: [35.0901, -92.4489] },
-    { name: 'Shop 2', coordinates: [35.0885, -92.4442] },
-    { name: 'Shop 3', coordinates: [35.0863, -92.4381] },
+    { name: 'Yours Truly Consignment', coordinates: [35.09311809930113, -92.43820158538433] },
+    { name: 'The Go Store', coordinates: [35.090765417998554, -92.43837324675474] },
+    { name: 'Goodwill- Oak Street', coordinates: [35.091186798743955, -92.42957560152153] },
+    { name: 'Dads and Lads Consignment', coordinates:[35.11062146097442, -92.44557790039295]},
+    { name: 'Goodwill- Sanders Street', coordinates:[35.1106380472001, -92.43662483141217]},
+    { name: 'Magnolias', coordinates:[35.11053272735064, -92.44615203746964]},
+
     // Add more shops as needed
   ];
 
