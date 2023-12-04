@@ -18,8 +18,9 @@ p{
 .empty-space{
     padding:20px;
 }
-center{
-    padding:10px;
+.center{
+    padding-left:400px;
+    padding-right:400px;
 }
 .row{
     display:flex; 

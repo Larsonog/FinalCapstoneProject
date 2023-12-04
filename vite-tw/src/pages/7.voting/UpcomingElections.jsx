@@ -32,7 +32,7 @@ function VotingDocs() {
     }
 
     return (
-        <div>
+        <div className='center'>
             <h1> Upcoming Voting Events! </h1>
             {voting.map(renderDoc)}
         </div>
