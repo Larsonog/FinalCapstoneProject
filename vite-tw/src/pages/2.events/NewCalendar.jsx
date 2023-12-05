@@ -6,7 +6,7 @@ import { getEvents } from '../../services/firestoreService'
 function renderEvent(event) {
     return (
         <div key={event.id} className='event'>
-            <h2 className='h2'> {event.title} </h2>
+            <h2 className='title'> {event.title} </h2>
             <p> {event.description}</p>
             {/*<p>{event.startTime.toDateString()}</p>*/}
             <p>when: {event.duration} </p>
@@ -35,7 +35,7 @@ function NewCalendar() {
             <div className='calendarContainer'>
 
                 <h1> Upcoming Events! </h1>
-                <div className='voting-container'>
+                <div className='events-container'>
                     <div className='border'>
                         {events.map(renderEvent)}
                     </div>

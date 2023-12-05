@@ -3,7 +3,6 @@ import {photos} from '../../components/carousel/photos'
 
 function CarouselonHome(){
   return (
-
     <Carousel images={photos}/>
   )
 }

@@ -35,7 +35,7 @@ function VotingDocs() {
 
     return (
         <div>
-            <h1> Upcoming Voting Events! </h1>
+            
             <div className='voting-container'>
             <div className='border'>
 

@@ -42,8 +42,9 @@ p{
 }
 
 .title{
-    font-size:15px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container{
     padding: 5px;
@@ -118,4 +119,11 @@ p{
 }
 .underline{
     border-bottom: 1px solid #888;
+}
+.event{
+    padding:25px;
+}
+.events-container{
+    padding-left:300px;
+    padding-right:300px;
 }
