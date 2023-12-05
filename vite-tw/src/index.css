@@ -48,6 +48,9 @@ p{
 .container{
     padding: 5px;
 }
+.bigger-container{
+    padding-left:100px;
+}
 .border{
     border: 2px solid;
 }
@@ -98,12 +101,14 @@ p{
 
 
 .votingPadding{
-    padding-left:100px;
+    padding-left:50px;
     padding-bottom: 10px;
+    padding-right: 50px;
 }
 .voting-container{
-    padding-left: 300px;
-    padding-right:300px;
+    padding-left: 150px;
+    padding-right:150px;
+    padding-bottom: 200px;
 }
 .post-border{
     border: 2px solid black;

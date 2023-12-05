@@ -45,6 +45,7 @@ const Home = () => {
                 Additionally here is the source code for the website.
               </p>
               <div className="blue-underline"><Link to='https://github.com/Larsonog/FinalCapstoneProject' > Encyclopia Repository </Link> </div>
+              Any questions? Contact me at Larsonog@hendrix.edu
               
               <div/>
             </div>
