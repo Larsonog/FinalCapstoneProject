@@ -32,8 +32,9 @@ p{
     padding-bottom: 5px;
 }
 .center{
-    padding-left:400px;
-    padding-right:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .row{
     display:flex; 
@@ -99,11 +100,13 @@ p{
 .votingPadding{
     padding-left:100px;
     padding-bottom: 10px;
-    border-style: dotted;
 }
 .post-border{
     border: 2px solid black;
     padding:5px;
     background: #DEDEF8 ;
     border-radius: 7px;
+}
+.underline{
+    border-bottom: 1px solid #888;
 }

@@ -36,24 +36,13 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={15}
+        zoom={14}
         onLoad={onLoad}
         onUnmount={onUnmount}
       > 
       
         { /* Child components, such as markers, info windows, etc. */ }
-        <Marker
-        position={center}
-        clickable={true}
-        >
-        <InfoBox>
-          <div>
-            <h2>Infobox Content</h2>
-            <p>Description here...</p>
-          </div>
-        </InfoBox>
-      </Marker>
-        
+  
       </GoogleMap>
   ) : <></>
 }

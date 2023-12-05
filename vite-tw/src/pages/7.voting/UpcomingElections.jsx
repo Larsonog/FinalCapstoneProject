@@ -2,18 +2,20 @@ import './VotingPage.css'
 import { useEffect, useState } from 'react'
 import { getVotingDoc } from '../../services/firestoreVotingService'
 
-
 function renderDoc(voting) {
     return (
-		<div className="block-example border border-dark">
+		
         <div key={voting.id} className='votingPadding' >
             <div className='title'> {voting.title} </div>
             <p> {voting.description}</p>
             {/*<p>{event.startTime.toDateString()}</p>*/}
             <p>{voting.date} </p>
+            
 			<p>{voting.addInfo}</p>
+            <div className='underline'/>
+            
         </div>
-		</div>
+	
     )
 }
 
@@ -32,9 +34,11 @@ function VotingDocs() {
     }
 
     return (
-        <div className='center'>
+        <div>
             <h1> Upcoming Voting Events! </h1>
+            <div className='border'>
             {voting.map(renderDoc)}
+            </div>
         </div>
     );
 }
