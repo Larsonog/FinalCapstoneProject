@@ -15,6 +15,10 @@ p{
     font-size:large;
     padding:5px;
 }
+.blue-underline{
+    color:  blue;
+    text-decoration: underline;
+}
 .empty-space{
     padding:20px;
 }

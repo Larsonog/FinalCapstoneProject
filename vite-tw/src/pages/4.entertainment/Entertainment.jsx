@@ -1,5 +1,6 @@
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import { Link } from 'react-router-dom'
 
 const posts = [
   {
@@ -13,7 +14,11 @@ const posts = [
     category: { title: 'Outdoor', href: '#' },
     author: {}, // if I remove this, it gets angry
     image: './assets/Cadron.jpeg',
-    list: "Cadron Ridge, Beaver Fork, Hendrix Creek Preserve, etc"
+    list: <ul>
+      <ul>Cadron Ridge</ul>
+      <ul>Beaver Fork</ul> 
+      <ul> Hendrix Creek Preserve </ul> 
+      </ul>
   },
 
   {
@@ -27,7 +32,18 @@ const posts = [
     category: { title: 'Group Activites', href: '#' },
     author: {},
     image: './assets/rec.jpeg',
-    list: "Adult Volleyball league, Bowling rec league, Chess club, etc"
+    list: <ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/adult-softball/' >  Adult Softball league </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/adult-kickball/' >  Adult Kickball league </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/adult-basketball/'>  Adult Basketball league </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/adult-volleyball/' >  Adult Volleyball league </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/disc-golf/' >  Disc Golf </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/youth-baseball/' >  Youth Baseball league </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/youth-softball/' >  Youth Softball league </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/youth-t-ball/' >  Youth T-ball </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/youth-flag-football/' >  Youth flag football </Link> </ul>
+    <ul className='blue-underline'> <Link to='https://conwayarkansas.gov/parks/programs/youth-softball/' >  Youth Fishing Derby </Link> </ul>
+    </ul>
   },
   {
     id: 3,
@@ -40,7 +56,11 @@ const posts = [
     category: { title: 'Miscelaneous', href: '#' },
     author: {},
     image: './assets/downtown.jpeg',
-    list: "grab a drink at Kings, check out Faulkner County public library,etc"
+    list:
+     <ul>
+    <ul>grab a drink at Kings</ul>
+    <ul> check out Faulkner County public library</ul>
+    </ul>
   },
 
   // More posts...
@@ -100,15 +120,12 @@ export default function Entertainment() {
                             <h2>{post.title}</h2>
                             <div className='small-empty-space' />
                             <div className="container">
-                              {posts.map((item, index) => (
-                                <ul> {item.list} </ul>
-                              ))}
+                              {post.list}
                             </div>
                           </div>
                           <div>
                             <button onClick=
                               {() => close()}>
-
                             </button>
                           </div>
                         </div>
