@@ -4,10 +4,6 @@ import { rList } from "./List"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
   crossorigin="" />
 
-function submitMoreR() {
-  let x = document.getElementById("moreRList").value;
-  document.getElementById("demo").innerHTML = x;
-}
 
 const Restaurants = () => {
 
