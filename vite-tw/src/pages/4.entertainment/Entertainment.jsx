@@ -31,7 +31,7 @@ const posts = [
     title: 'Recreation Leagues',
     href: '#',
     description:
-      'Heres a list of organizations you can join!',
+      'Heres a list of rec leagues you can join!',
     date: '',
     datetime: '',
     category: { title: 'Group Activites', href: '#' },
@@ -69,11 +69,7 @@ const posts = [
         <ul className='blue-underline'> <Link to='https://www.windgatemuseum.org' > Visit the Windgate Museum </Link> </ul>
         <ul className='blue-underline'> <Link to='https://www.faulknercounty.org/faulknercountymuseum.org/' > Visit the Faulkner County Museum </Link> </ul>
         <ul className='blue-underline'> <Link to='https://www.conwayfamilybowl.com' > Go Bowling at Conway Family Bowl </Link> </ul>
-        <ul className='blue-underline'> <Link to='https://www.climbconway.com' > Visit a climbing gym at Climb Conway </Link> </ul>
-        
-       
-        
-        
+        <ul className='blue-underline'> <Link to='https://www.climbconway.com' > Visit a climbing gym at Climb Conway </Link> </ul>      
       </ul>
   },
 
@@ -120,12 +116,14 @@ export default function Entertainment() {
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
                 </div>
+                
                 <Popup trigger=
                   {<div className='button-border'>
                     <div className='h2'>
                       <button> Click to see full list </button>
                     </div>
                   </div>}
+                 
                   modal nested>
                   {
                     close => (
@@ -146,7 +144,9 @@ export default function Entertainment() {
                       </div>
                     )
                   }
+                  
                 </Popup>
+                
 
               </article>
             </div>

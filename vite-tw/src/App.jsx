@@ -31,7 +31,7 @@ function App() {
             <Route  path='/voting' element={<Voting />} />
             <Route  path='/walkinclinics' element={<WalkInClinics />} />
           </Routes>
-          <Footer/>
+          
         </Router>
       </div>
   

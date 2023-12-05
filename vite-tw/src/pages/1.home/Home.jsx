@@ -1,4 +1,5 @@
 import CarouselonHome from "./Carousel"
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -9,9 +10,10 @@ const Home = () => {
         <div className="home-padding">
 
           <div className="empty-space" />
-          
-          <div className="row">
-            <div >
+
+          <div className="post-border">
+            <div className="empty-space" />
+            <div className="homepage-container3" >
               <h2>Welcome!</h2>
               <p>
                 Welcome to Encylopedia Conway a webpage for anything and everything going on in Conway, Arkansas.
@@ -22,11 +24,8 @@ const Home = () => {
                 Enjoy!
               </p>
             </div>
-
-
-
-
-            <div>
+            <div className="empty-space" />
+            <div className="homepage-container3">
               <h2>How to Navigate this website</h2>
               <p>
                 This website has 7 pages with pertent information about the town of Conway.
@@ -37,15 +36,19 @@ const Home = () => {
                 And finally, the Walk-in clinics page has the name and location of walk-in clinics in town. Hopefully this helps. If you have any questions my contact information is below!
               </p>
             </div>
-          </div>
 
-          <div className="empty-space" />
-          <div>
-            <h2>Want to make a website for your city?</h2>
-            <p> You can follow a step by step tutorial.
-              Additionally here is the source code for the website.
-            </p>
-            <div />
+
+            <div className="empty-space" />
+            <div className="homepage-container3">
+              <h2>Want to make a website for your city?</h2>
+              <p> You can follow a step by step tutorial.
+                Additionally here is the source code for the website.
+              </p>
+              <div className="blue-underline"><Link to='https://github.com/Larsonog/FinalCapstoneProject' > Encyclopia Repository </Link> </div>
+              
+              <div/>
+            </div>
+            <div className="empty-space"/>
           </div>
         </div>
 
