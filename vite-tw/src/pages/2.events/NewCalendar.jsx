@@ -9,7 +9,9 @@ function renderEvent(event) {
             <h2 className='h2'> {event.title} </h2>
             <p> {event.description}</p>
             {/*<p>{event.startTime.toDateString()}</p>*/}
-            <p>{event.duration} </p>
+            <p>when: {event.duration} </p>
+            <p>where: {event.where}</p>
+            <div className='underline' />
         </div>
     )
 }
@@ -31,10 +33,13 @@ function NewCalendar() {
     return (
         <div className='page-background'>
             <div className='calendarContainer'>
-                
+
                 <h1> Upcoming Events! </h1>
-                {events.map(renderEvent)}
-            
+                <div className='voting-container'>
+                    <div className='border'>
+                        {events.map(renderEvent)}
+                    </div>
+                </div>
             </div>
         </div>
     );

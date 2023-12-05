@@ -69,7 +69,7 @@ p{
 
 }
 .page-background{
-    background-color: #fbf7f5;
+    background: linear-gradient(0deg, white,#fbf7f5);
 }
 .voting-page-background{
     background: linear-gradient(0deg, white,#fbf7f5 );
@@ -100,6 +100,10 @@ p{
 .votingPadding{
     padding-left:100px;
     padding-bottom: 10px;
+}
+.voting-container{
+    padding-left: 300px;
+    padding-right:300px;
 }
 .post-border{
     border: 2px solid black;

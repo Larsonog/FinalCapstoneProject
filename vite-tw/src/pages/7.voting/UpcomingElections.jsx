@@ -36,8 +36,11 @@ function VotingDocs() {
     return (
         <div>
             <h1> Upcoming Voting Events! </h1>
+            <div className='voting-container'>
             <div className='border'>
+
             {voting.map(renderDoc)}
+            </div>
             </div>
         </div>
     );

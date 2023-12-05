@@ -11,6 +11,7 @@ export async function getEvents() {
         description: doc.data()["description"],
         duration: doc.data()["duration"],
         startDate: doc.data()["startDate"],
+        where: doc.data()["where"]
     }));
 
 }
