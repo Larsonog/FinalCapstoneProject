@@ -46,3 +46,5 @@ function NewCalendar() {
 }
 
 export default NewCalendar
+
+// The events page was inspired by this tutorial https://youtu.be/u25_Fd5xNkc?si=Zk1SRWNg7CSt1Rro
