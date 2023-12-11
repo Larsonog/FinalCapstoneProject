@@ -91,3 +91,5 @@ export default function Example() {
     </Disclosure>
   )
 }
+
+// I learned a lot from this tutorial on how to make a functional NavBar: https://youtu.be/p8ZjHpMo-E4?si=kJ2MoMbZa-uOgKVA

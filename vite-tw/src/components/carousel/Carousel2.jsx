@@ -80,4 +80,4 @@ function Carousel({ images }) {
 
 export default Carousel;
 
-//https://youtu.be/SAWQ_LmyY2Q?si=RS46ECGB9-Hbh4bw
+// I followed this tutorial on how to make an autoplay carousel: https://youtu.be/SAWQ_LmyY2Q?si=RS46ECGB9-Hbh4bw

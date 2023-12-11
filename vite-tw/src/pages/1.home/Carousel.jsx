@@ -1,5 +1,5 @@
 import Carousel from '../../components/carousel/Carousel2'
-import {photos} from '../../components/carousel/photos'
+import {photos} from './Photos'
 
 function CarouselonHome(){
   return (
